@@ -20,7 +20,7 @@ export const useWeatherStore = defineStore('weather', () => {
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:5000/api/weather/?location=${encodeURIComponent(searchQuery.value)}`,
+        `http://127.0.0.1:8000/api/weather/?location=${encodeURIComponent(searchQuery.value)}`,
       )
 
       if (!response.ok) throw new Error(`HTTP ${response.status}`)
