@@ -1,0 +1,12 @@
+To run
+
+```sh
+python -m flask run
+```
+
+To do migration
+
+```sh
+python -m flask db migrate -m "migration message"
+python -m flask db upgrade
+```
