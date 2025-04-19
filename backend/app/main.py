@@ -1,5 +1,5 @@
 from flask.cli import FlaskGroup
-from app.app import create_app
+from app import create_app
 from app.extensions import db
 from app.api.weather.models import WeatherCache  # import your models here
 

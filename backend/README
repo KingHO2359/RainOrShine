@@ -1,7 +1,7 @@
 To run
 
 ```sh
-python -m flask run
+gunicorn -w 1 wsgi:app
 ```
 
 To do migration
